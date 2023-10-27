@@ -6,7 +6,7 @@ from os import path
 
 setup(
     name='headsup',
-    version='0.1.1',
+    version='0.1.2',
     author='Tarjei Husøy',
     author_email='git@thusoy.com',
     url='https://github.com/thusoy/headsup',
@@ -18,6 +18,10 @@ setup(
             'headsup = headsup:main'
         ]
     },
+    install_requires=[
+        "distutils",
+        "tabulate"
+    ],
     classifiers=[
         # complete classifier list: http://pypi.python.org/pypi?%3Aaction=list_classifiers
         'Development Status :: 4 - Beta',
