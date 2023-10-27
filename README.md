@@ -16,13 +16,48 @@ If you just want to replace the Ubuntu default, copy the `headsup.py` file into 
 
 
 Usage
------
+```shell
+$ headsup
 
-    $ headsup
+----------------  --------------------------------------------
+System load:      100.0% (6.25% per-core)(16 cores)
+Processes:        599
+Usage of /:       4.8% of 188.76GB
+Users logged in:  2
+Memory Usage:     29.78% (MemFree: 23.02 GB, MemMax: 32.78 GB)
+IP address for    enp4s0: 192.168.2.5
+Swap Usage:       ---
+----------------  --------------------------------------------
 
-      System information as of Tue Oct 27 14:21:53 2015
 
-      System load:  16.0%              Processes:        104
-      Usage of /:   54.7% of 68.63GB   Users logged in:  3
-      Memory usage: 28.4%              IP address for wlan0: 10.3.12.75
-      Swap usage:   ---
+$ headsup --extra
+Arch: x86_64
+Version: #97-Ubuntu SMP Mon Oct 2 21:09:21 UTC 2023
+OS Type: Linux
+Kernel: 5.15.0-87-generic
+Hostname: dev-vm
+Uname: uname_result(system='Linux', node='dev-vm', release='5.15.0-87-generic', version='#97-Ubuntu SMP Mon Oct 2 21:09:21 UTC 2023', machine='x86_64')
+libc_ver: ('glibc', '2.35')
+System information as of Fri Oct 27 21:08:53 2023    
+
+----------------  --------------------------------------------
+System load:      100.0% (6.25% per-core)(16 cores)
+Processes:        599
+Usage of /:       4.8% of 188.76GB
+Users logged in:  2
+Memory Usage:     29.78% (MemFree: 23.02 GB, MemMax: 32.78 GB)
+IP address for    enp4s0: 192.168.2.5
+Swap Usage:       ---
+----------------  --------------------------------------------
+
+
+$ headsup --extra-only
+Arch: x86_64
+Version: #97-Ubuntu SMP Mon Oct 2 21:09:21 UTC 2023
+OS Type: Linux
+Kernel: 5.15.0-87-generic
+Hostname: dev-vm
+Uname: uname_result(system='Linux', node='dev-vm', release='5.15.0-87-generic', version='#97-Ubuntu SMP Mon Oct 2 21:09:21 UTC 2023', machine='x86_64')
+libc_ver: ('glibc', '2.35')
+System information as of Fri Oct 27 21:08:53 2023
+```
